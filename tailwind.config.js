@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: "class",
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
@@ -17,6 +18,14 @@ module.exports = {
       fontFamily: {
         "open-sans": ['"Open Sans"', "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
+      },
+      backgroundImage: {
+        // Grow section
+        "grow-top": "url('/grow-top.svg')",
+        "grow-top-mobile": "url('/grow-top-mobile.svg')",
+        "grow-bottom": "url('/grow-bottom.svg')",
+        "grow-bottom-mobile": "url('/grow-bottom-mobile.svg')",
+        // Another section
       },
     },
   },
